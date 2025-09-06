@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: ch06-ex1-email-sol
+    env: docker
+    plan: free          # gói free của Render
+    autoDeploy: true
+    healthCheckPath: /  # vì app deploy vào ROOT
+    # Nếu project nằm trong subfolder, thêm:
+    # rootDir: ./ch06_ex1_email_sol
